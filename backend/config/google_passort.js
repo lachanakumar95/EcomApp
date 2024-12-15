@@ -24,12 +24,12 @@ let loginConfigData = null;
 loginConfigModel.findOne()
   .then((result) => {
     loginConfigData = result;
-    console.log(loginConfigData.google_clientId);
+    //console.log(loginConfigData.google_clientId);
 
     // Initialize Google Strategy once config data is loaded
     passport.use(new GoogleStrategy({ 
-     clientID: loginConfigData.google_clientId,
-      clientSecret: loginConfigData.google_clientSecret,
+     clientID: "98061602916-hegpdadfbjbp8eqcfmihspbe5mlc239f.apps.googleusercontent.com",
+      clientSecret: "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",
       callbackURL: '/api/google/callback'
     },
       async (accessToken, refreshToken, profile, done) => {
