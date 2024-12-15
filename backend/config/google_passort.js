@@ -18,13 +18,6 @@ passport.deserializeUser(async (id, done) => {
 });
 
 
-let loginConfigData = null;
-
-// Fetch login config data and initialize Google Strategy
-loginConfigModel.findOne()
-  .then((result) => {
-    loginConfigData = result;
-    //console.log(loginConfigData.google_clientId);
 
     // Initialize Google Strategy once config data is loaded
     passport.use(new GoogleStrategy({ 
@@ -49,7 +42,4 @@ loginConfigModel.findOne()
         }
       }));
 
-  })
-  .catch((error) => {
-    console.error('Error fetching login config:', error);
-  });
+
