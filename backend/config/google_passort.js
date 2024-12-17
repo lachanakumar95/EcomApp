@@ -59,7 +59,7 @@ passport.deserializeUser(async (id, done) => {
         {
           clientID: loginConfigData.google_clientId,
           clientSecret: loginConfigData.google_clientSecret,
-          callbackURL: '/api/google/callback',
+          callbackURL: '/google/callback',
         },
         async (accessToken, refreshToken, profile, done) => {
           try {
