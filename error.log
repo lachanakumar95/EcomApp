@@ -1,0 +1,271 @@
+
+    [16/12/2024, 8:29:17 AM] GET /api/google/
+    Status: 500
+    Error: Unknown authentication strategy "google"
+    Stack: Error: Unknown authentication strategy "google"
+    at attempt (D:\My Life\v1\backend\node_modules\passport\lib\middleware\authenticate.js:193:39)
+    at authenticate (D:\My Life\v1\backend\node_modules\passport\lib\middleware\authenticate.js:379:7)
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\My Life\v1\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [17/12/2024, 1:59:44 PM] POST /api/mobile/placeorder
+    Status: 500
+    Error: card is not defined
+    Stack: ReferenceError: card is not defined
+    at exports.placeOrder (D:\My Life\v1\backend\api\mobile\order\orderController.js:37:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+    [17/12/2024, 2:00:03 PM] POST /api/mobile/placeorder
+    Status: 500
+    Error: card is not defined
+    Stack: ReferenceError: card is not defined
+    at exports.placeOrder (D:\My Life\v1\backend\api\mobile\order\orderController.js:37:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+    [17/12/2024, 2:01:44 PM] POST /api/mobile/placeorder
+    Status: 500
+    Error: onsole is not defined
+    Stack: ReferenceError: onsole is not defined
+    at exports.placeOrder (D:\My Life\v1\backend\api\mobile\order\orderController.js:48:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+    [17/12/2024, 2:13:34 PM] POST /api/mobile/placeorder
+    Status: 500
+    Error: Assignment to constant variable.
+    Stack: TypeError: Assignment to constant variable.
+    at exports.placeOrder (D:\My Life\v1\backend\api\mobile\order\orderController.js:61:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+    [17/12/2024, 2:14:38 PM] POST /api/mobile/placeorder
+    Status: 500
+    Error: Assignment to constant variable.
+    Stack: TypeError: Assignment to constant variable.
+    at exports.placeOrder (D:\My Life\v1\backend\api\mobile\order\orderController.js:61:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+    [17/12/2024, 2:36:00 PM] POST /api/mobile/placeorder
+    Status: 500
+    Error: individualGSTs is not defined
+    Stack: ReferenceError: individualGSTs is not defined
+    at exports.placeOrder (D:\My Life\v1\backend\api\mobile\order\orderController.js:141:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+    [17/12/2024, 2:39:36 PM] POST /api/mobile/placeorder
+    Status: 500
+    Error: Order validation failed: individualGST.0: Cast to [string] failed for value "[\n' +
+  "  { taxName: 'GST', taxPercentage: 5, taxAmount: 7.5 },\n" +
+  "  { taxName: 'GST', taxPercentage: 10, taxAmount: 15 }\n" +
+  ']" (type string) at path "individualGST.0" because of "CastError"
+    Stack: ValidationError: Order validation failed: individualGST.0: Cast to [string] failed for value "[\n' +
+  "  { taxName: 'GST', taxPercentage: 5, taxAmount: 7.5 },\n" +
+  "  { taxName: 'GST', taxPercentage: 10, taxAmount: 15 }\n" +
+  ']" (type string) at path "individualGST.0" because of "CastError"
+    at Document.invalidate (D:\My Life\v1\backend\node_modules\mongoose\lib\document.js:3318:32)
+    at model.$set (D:\My Life\v1\backend\node_modules\mongoose\lib\document.js:1474:12)
+    at model.$set (D:\My Life\v1\backend\node_modules\mongoose\lib\document.js:1128:16)
+    at model.Document (D:\My Life\v1\backend\node_modules\mongoose\lib\document.js:177:12)
+    at model.Model (D:\My Life\v1\backend\node_modules\mongoose\lib\model.js:127:12)
+    at new model (D:\My Life\v1\backend\node_modules\mongoose\lib\model.js:4682:15)
+    at exports.placeOrder (D:\My Life\v1\backend\api\mobile\order\orderController.js:136:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+    [20/12/2024, 9:43:18 AM] GET /api/admin/subcategory/undefined
+    Status: 500
+    Error: Cast to ObjectId failed for value "undefined" (type string) at path "fk_category" for model "subcategory"
+    Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "fk_category" for model "subcategory"
+    at SchemaObjectId.cast (D:\My Life\v1\backend\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (D:\My Life\v1\backend\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (D:\My Life\v1\backend\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (D:\My Life\v1\backend\node_modules\mongoose\lib\cast.js:390:32)
+    at Query.cast (D:\My Life\v1\backend\node_modules\mongoose\lib\query.js:4908:12)
+    at Query._castConditions (D:\My Life\v1\backend\node_modules\mongoose\lib\query.js:2302:10)
+    at model.Query._find (D:\My Life\v1\backend\node_modules\mongoose\lib\query.js:2329:8)
+    at model.Query.exec (D:\My Life\v1\backend\node_modules\mongoose\lib\query.js:4449:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async exports.getSubcategoryBasedParent (D:\My Life\v1\backend\api\subcategory\subcategoryController.js:172:24)
+
+    [20/12/2024, 9:43:23 AM] GET /api/admin/subcategory/undefined
+    Status: 500
+    Error: Cast to ObjectId failed for value "undefined" (type string) at path "fk_category" for model "subcategory"
+    Stack: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "fk_category" for model "subcategory"
+    at SchemaObjectId.cast (D:\My Life\v1\backend\node_modules\mongoose\lib\schema\objectId.js:250:11)
+    at SchemaType.applySetters (D:\My Life\v1\backend\node_modules\mongoose\lib\schemaType.js:1236:12)
+    at SchemaType.castForQuery (D:\My Life\v1\backend\node_modules\mongoose\lib\schemaType.js:1653:17)
+    at cast (D:\My Life\v1\backend\node_modules\mongoose\lib\cast.js:390:32)
+    at Query.cast (D:\My Life\v1\backend\node_modules\mongoose\lib\query.js:4908:12)
+    at Query._castConditions (D:\My Life\v1\backend\node_modules\mongoose\lib\query.js:2302:10)
+    at model.Query._find (D:\My Life\v1\backend\node_modules\mongoose\lib\query.js:2329:8)
+    at model.Query.exec (D:\My Life\v1\backend\node_modules\mongoose\lib\query.js:4449:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async exports.getSubcategoryBasedParent (D:\My Life\v1\backend\api\subcategory\subcategoryController.js:172:24)
+
+    [20/12/2024, 9:44:16 AM] GET /api/mobile/subcategory/
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [21/12/2024, 8:02:20 PM] PUT /api/promocode
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [23/12/2024, 8:35:05 PM] GET /favicon.ico
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (D:\My Life\v1\backend\node_modules\body-parser\lib\types\urlencoded.js:94:7)
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+
+    [29/12/2024, 8:45:43 AM] GET /api
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [29/12/2024, 8:45:48 AM] GET /api
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [29/12/2024, 8:45:48 AM] GET /api
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [29/12/2024, 8:48:23 AM] GET /api
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [29/12/2024, 8:48:29 AM] GET /api
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [29/12/2024, 8:48:40 AM] GET /api
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [29/12/2024, 8:48:40 AM] GET /api
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
+
+    [29/12/2024, 8:53:24 AM] GET /api
+    Status: 404
+    Error: The requested resource could not be found
+    Stack: Error: The requested resource could not be found
+    at CustomError.NotFound (D:\My Life\v1\backend\utils\customError.js:17:16)
+    at D:\My Life\v1\backend\app.js:145:22
+    at Layer.handle [as handle_request] (D:\My Life\v1\backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:328:13)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:280:10)
+    at D:\My Life\v1\backend\node_modules\express\lib\router\index.js:646:15
+    at next (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (D:\My Life\v1\backend\node_modules\express\lib\router\index.js:175:3)
